@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-screenshot-studio",
-  "version": "1.0.0",
-  "description": "Screen Recording & Annotation Studio — Record browser/desktop with voiceover, annotations, arrows, export to GIF/MP4",
+  "version": "1.0.1",
+  "description": "Screen Recording & Annotation Studio \u2014 Record browser/desktop with voiceover, annotations, arrows, export to GIF/MP4",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,17 +9,35 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-screenshot-studio",
   "homepage": "https://cortexprism.io/marketplace/plugins/screenshot-studio",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "screen_record",
       "description": "Record screen session with voiceover",
       "params": []
     },
-    { "name": "screen_annotate", "description": "Add arrows, highlights, and zooms", "params": [] },
-    { "name": "screen_export", "description": "Export to GIF, MP4, or WebM", "params": [] }
+    {
+      "name": "screen_annotate",
+      "description": "Add arrows, highlights, and zooms",
+      "params": []
+    },
+    {
+      "name": "screen_export",
+      "description": "Export to GIF, MP4, or WebM",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
